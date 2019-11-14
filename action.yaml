@@ -1,0 +1,11 @@
+name: gh-actions
+description: Kubectl GH Action
+author: 'Victor SALAUN'
+inputs:
+  subcommand:
+    description: 'kubectl subcommand'
+    required: false
+    default: 'version --client'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
